@@ -2,34 +2,34 @@ import { useState } from "react";
 
 export const TodoListAdd = (props) => {
     const [inputs, setInputs] = useState({
-        context:"", etc:""
+        context:"", etc:"", index:props.index
     })
-
-    const {context, etc} = inputs
-
+    const {context, etc, index} = inputs
     const inputChange = (e)=>{
         const { value, name } = e.target
         setInputs({
             ...inputs, [name]: value
         })
-        
     }
-
     const resetInputs = () => {
         setInputs({
             context: '',
-            etc: ''
+            etc: '',
+            index: '',
         });
     }
-
     const adding = ()=>{
-        props.addTodo(context, etc)
+        props.addTodo(context, etc, props.index)
         resetInputs()
     }
+    const handleSubmit = (event)=>{
+        event.preventDefault();
+    }
+
     return (
         <div className="todolist__detail__add">
             <span className="todolist__detail__header"> ADD </span>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="todolist__detail__input">
                     <label htmlFor="context">할일</label>
                     <input id="context" type="text" name="context" value={context} onChange={inputChange}/>
@@ -40,8 +40,6 @@ export const TodoListAdd = (props) => {
                 </div>
                 <div className="todolist__detail__btn">
                     <button onClick={adding}>추가</button>
-                    <button>작업 끝</button>
-                    <button>삭제</button>
                 </div>
             </form>
         </div>
