@@ -22,3 +22,6 @@
  (startTransition >> targeting and holding tasks  >>  isPending (give status true or false by task) >> by using isPending variable, it could be presenting task's status)
 
 ---
+> DAY2 TODOList작성
+- 최소한의 찾음으로 여러 단계를 거쳐 작성 중
+- 내일 완성예정
