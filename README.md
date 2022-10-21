@@ -21,7 +21,11 @@
  (using isPending, startTransition, give condition for judging pirioty and apply) <br>
  (startTransition >> targeting and holding tasks  >>  isPending (give status true or false by task) >> by using isPending variable, it could be presenting task's status)
 
----
-> DAY2 TODOList작성
+-----
+> DAY2 TODOList 작성
 - 최소한의 찾음으로 여러 단계를 거쳐 작성 중
 - 내일 완성예정
+-----
+> DAY3 TODOList 완성
+- 로컬 스토리지를 통하여 저장기능 구현
+- 등록, 삭제 정도만 간단히 구현
