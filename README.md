@@ -1,5 +1,4 @@
 # React Study
-> ### Please note that this repository used for log the day of study result.
 -----
 
 > DAY1 리액트18 기초강좌 - https://www.youtube.com/watch?v=jLS0TkAHvRg&t=1s // Codevolution
